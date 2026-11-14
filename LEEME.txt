@@ -1,0 +1,21 @@
+TV TIME - VERSION AJUSTADA AL DISEÑO APROBADO
+
+Descomprimí el ZIP y abrí index.html en tu navegador.
+
+Esta versión usa como referencia visual la propuesta aprobada: encabezado compacto, hero con escena de TV, categorías en una fila, siete tarjetas de aplicaciones con sus logos, carrusel y franja de pasos.
+
+Incluye enlaces proporcionados, navegación, filtros, buscador y carrusel. Es una demo estática; el panel administrador y la base de datos aún no están incluidos.
+
+
+NAVEGACION ACTUALIZADA:
+- Aplicaciones lleva a Aplicaciones Destacadas y resalta esa sección.
+- Categorías lleva a Explorar por Categorías y resalta esa sección.
+- Tutoriales lleva a ¿Cómo funciona? y resalta esa sección.
+- Contacto abre WhatsApp al +54 9 261 279-9518.
+
+
+CATALOGO:
+El boton 'Ver Catalogo' abre catalogo.html, incluido en esta carpeta y basado en el archivo de catalogo enviado.
+
+BOTON COMO FUNCIONA:
+Abre una ventana emergente con los pasos de instalacion y se puede cerrar con la X, el boton Entendido o la tecla Escape.

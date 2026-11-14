@@ -1,0 +1,538 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:94px}body{margin:0;background:#050a12;color:#f4f8ff;font-family:Manrope,Arial,sans-serif;overflow-x:hidden}.topbar{height:84px;position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:28px;padding:0 clamp(18px,5.5vw,92px);background:rgba(5,10,18,.97);border-bottom:1px solid #19334c;box-shadow:0 8px 28px #0008}.brand{display:flex;align-items:center;gap:12px;min-width:285px;color:#fff;text-decoration:none;border-right:2px solid #dce7f4;padding-right:28px}.brand-tv svg{width:68px;stroke:#08c9f5;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.brand-tv .play{fill:#08a9f0;stroke:#fff;stroke-width:1.4}.brand-copy strong{font-size:30px;font-style:italic;letter-spacing:-1.8px;white-space:nowrap}.brand-copy i{color:#079de9}.brand-copy small{display:block;font-size:10px;line-height:1.15;color:#d6e3f1}.main-nav{display:flex;align-items:center;justify-content:space-between;gap:5px;flex:1}.nav-link{color:#f0f5fc;text-decoration:none;font-size:9px;font-weight:700;padding:5px 6px;border-radius:25px;white-space:nowrap;transition:.25s}.nav-link span{font-size:12px;vertical-align:-1px;margin-right:3px}.nav-link:hover,.nav-link.active{background:linear-gradient(120deg,#087acb,#05bff4);box-shadow:0 0 18px #00aaff77}.search-toggle,.mobile-menu{border:1px solid #394b61;background:#182333;color:white;border-radius:50%;width:48px;height:48px;font-size:27px;cursor:pointer}.mobile-menu{display:none}.hero{min-height:356px;display:grid;grid-template-columns:48% 52%;position:relative;overflow:hidden;background:linear-gradient(90deg,#050a12 0%,#07101d 45%,#100b1d 100%);border-bottom:1px solid #12314a}.hero-copy{z-index:2;padding:34px 0 28px clamp(24px,7.2vw,120px);align-self:center}.eyebrow{font-size:15px;font-weight:800;color:#00c8f4;letter-spacing:.4px;margin:0 0 8px}.hero h1{font-size:clamp(34px,3.4vw,51px);line-height:1.02;letter-spacing:-2px;margin:0 0 12px;font-weight:800;font-style:italic}.hero h1 em{font-style:italic;color:#08b9f0}.hero-desc{font-size:17px;line-height:1.45;margin:0 0 16px;color:#f1f5fa}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:205px;padding:13px 22px;border-radius:30px;text-decoration:none;color:white;font-size:16px;font-weight:800;transition:transform .25s,box-shadow .25s}.btn span{font-size:24px}.btn-primary{background:linear-gradient(100deg,#0099ee,#08d2f4);box-shadow:0 0 18px #00aaff70}.btn-outline{border:2px solid #00c5ef;background:#08111e}.btn:hover{transform:translateY(-3px) scale(1.025);box-shadow:0 0 25px #00bfff99}.hero-scene{position:relative;min-height:356px;overflow:hidden;background:radial-gradient(ellipse at 53% 42%,#7432a7 0,#221638 27%,#10101d 55%,#080d17 82%)}.hero-scene:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050a12 0,transparent 25%),linear-gradient(0deg,#080c15 0,transparent 28%)}.room-glow{position:absolute;width:55%;height:65%;right:12%;top:0;background:#bd39ff55;filter:blur(55px)}.plant{position:absolute;left:5%;top:25%;font-size:80px;color:#376d52;transform:rotate(-15deg);text-shadow:0 0 15px #000}.lamp{position:absolute;left:25%;top:48%;width:22px;height:22px;border-radius:50%;background:#fff5c8;box-shadow:0 0 25px 12px #ffcf6a99}.tv{position:absolute;width:min(64%,530px);height:64%;right:13%;top:8%;perspective:700px}.tv-screen{height:90%;border:9px solid #080a12;border-radius:8px;background:radial-gradient(ellipse at 80% 20%,#8d20cf,#1b0733 42%,#070611 78%);box-shadow:0 0 0 2px #343043,0 15px 35px #000;display:grid;place-items:center;position:relative;overflow:hidden}.screen-wave{position:absolute;inset:35% -20% -30%;border-radius:50%;border-top:16px solid #b72cff88;transform:rotate(-12deg);filter:blur(2px);box-shadow:0 -20px 30px #d20cff55}.screen-logo{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;text-shadow:0 0 18px #c02cff}.screen-tv{font-size:54px;color:#d56cff;border:4px solid #d56cff;border-radius:12px;padding:0 20px;line-height:1.2}.screen-logo b{font-size:30px;font-style:italic}.screen-logo i{color:#cf68ff}.tv-stand{width:44%;height:12px;margin:auto;background:linear-gradient(#333,#090a0f);clip-path:polygon(38% 0,62% 0,78% 100%,22% 100%)}.console{position:absolute;bottom:12%;right:22%;width:56%;height:16px;background:linear-gradient(#292632,#07080d);border-radius:50%;box-shadow:0 12px 20px #000}.remote{position:absolute;bottom:12%;right:10%;transform:rotate(13deg);background:#101723;border:2px solid #45516a;border-radius:18px;padding:10px 18px;color:#08bff2;box-shadow:0 7px 13px #000}.popcorn{position:absolute;right:2%;bottom:8%;font-size:64px;filter:drop-shadow(0 8px 8px #000)}.categories-section,.apps-section{padding:17px clamp(20px,5.7vw,94px) 0;scroll-margin-top:98px}.section-title{display:flex;align-items:center;gap:10px;font-size:26px;letter-spacing:-.7px;margin:0 0 14px;font-weight:800}.section-title>span{width:5px;height:28px;border-radius:8px;background:#00c5f3;box-shadow:0 0 12px #00baff}.category-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:12px}.category-card{height:88px;border:1px solid #3b4a60;border-radius:16px;background:linear-gradient(145deg,#1a2433,#0d1521);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#f4f8ff;text-decoration:none;box-shadow:inset 0 1px #ffffff0b;transition:.25s}.category-card b{font-size:30px;font-weight:500}.category-card span{font-size:12px;font-weight:700}.category-card:hover,.category-card.selected{border-color:#00bff5;background:linear-gradient(145deg,#075b91,#102b47);box-shadow:0 0 17px #00aaff66;transform:translateY(-2px)}.apps-section{padding-top:20px}.section-heading{display:flex;align-items:center;justify-content:space-between}.see-all{color:#05d4f4;text-decoration:none;font-weight:700;font-size:14px}.see-all b{font-size:22px}.carousel-wrap{position:relative;padding:0 8px}.app-track{display:flex;gap:12px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding:2px 3px 12px;scroll-snap-type:x mandatory}.app-track::-webkit-scrollbar{display:none}.app-card{flex:0 0 255px;min-height:130px;scroll-snap-align:start;border:1px solid #40516a;border-radius:17px;background:linear-gradient(145deg,#192434,#0b121d);display:flex;align-items:center;gap:12px;padding:12px;box-shadow:inset 0 1px #ffffff0b;transition:transform .25s,border-color .25s,box-shadow .25s}.app-card:hover{transform:translateY(-5px);border-color:#00c8f5;box-shadow:0 7px 22px #00aaff2c}.app-icon{flex:0 0 72px;height:72px;border-radius:15px;display:grid;place-items:center;font-size:42px;font-weight:900;color:white;box-shadow:0 0 0 1px #ffffff20,inset 0 1px #ffffff25}.downloader{background:linear-gradient(145deg,#ff8a27,#e33a00)}.argentum{background:linear-gradient(145deg,#061a36,#000);color:#1ca9ff;font-size:58px;font-style:italic}.lumix{background:#07172a;color:#00d5f5;border:1px solid #087aa9}.tryplay{background:linear-gradient(145deg,#2720a0,#080b28);color:#2cbbff}.wolvex{background:radial-gradient(circle,#6230a2,#080719);color:#e7d8ff;text-shadow:0 0 12px #b64dff}.vixen{background:#070c17;color:#ec1d36;font-size:60px;font-style:italic}.channel{background:linear-gradient(145deg,#123c73,#06152a);color:#e7f7ff}.app-content{min-width:0;flex:1}.app-content h3{font-size:15px;line-height:1.2;margin:0 0 5px;white-space:normal}.app-content p{font-size:11px;line-height:1.35;color:#d4deeb;margin:0 0 8px;min-height:29px}.download-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:8px 8px;border-radius:22px;background:linear-gradient(100deg,#008be8,#04c9f1);color:white;text-decoration:none;font-size:12px;font-weight:800;box-shadow:0 0 10px #00aaff55;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}.download-btn:before{content:"";position:absolute;top:-40%;left:-70%;width:35%;height:180%;background:#ffffff55;transform:skewX(-25deg);animation:shine 3.5s infinite}.download-btn:hover{transform:scale(1.04);box-shadow:0 0 20px #00bfffaa}.download-btn span{font-size:16px}.carousel-arrow{position:absolute;z-index:2;top:38%;width:42px;height:42px;border-radius:50%;border:2px solid #04cafa;background:#071321;color:white;font-size:34px;line-height:28px;box-shadow:0 0 13px #00baff88;cursor:pointer;transition:.2s}.carousel-arrow:hover{background:#0789c9;transform:scale(1.1)}.carousel-arrow.prev{left:-38px}.carousel-arrow.next{right:-38px}.carousel-dots{display:flex;justify-content:center;gap:9px;padding:0 0 13px}.carousel-dots button{width:10px;height:10px;border:0;border-radius:50%;background:#8794a4;cursor:pointer}.carousel-dots button.active{background:#05cafa;box-shadow:0 0 10px #00cfff;transform:scale(1.25)}.filter-note{margin:0;color:#7e9ab6;font-size:11px;min-height:14px}.how-section{margin:8px clamp(20px,5.2vw,86px) 28px;border:2px solid #00c7f5;border-radius:18px;min-height:80px;display:flex;align-items:center;justify-content:space-around;gap:12px;padding:12px 18px;background:linear-gradient(90deg,#071321,#0a1725);box-shadow:0 0 17px #00aaff20}.how-section h2{font-size:23px;white-space:nowrap;margin:0 16px 0 0}.step{display:flex;align-items:center;gap:10px;font-size:12px;line-height:1.4;min-width:0}.step strong{font-size:14px}.step-icon{font-size:32px;color:#00c9f5;text-shadow:0 0 12px #00bfff}.extra-section{padding:15px clamp(20px,5.7vw,94px) 45px;color:#8fa7c0}.extra-section p{font-size:13px}footer{border-top:1px solid #1d344b;padding:25px 6%;display:flex;align-items:center;gap:15px;color:#8da4be;font-size:12px}footer strong{font-size:18px;color:#fff;font-style:italic}footer small{margin-left:auto}.search-panel{display:none;position:fixed;z-index:30;top:92px;right:5%;background:#101d2d;border:1px solid #31516f;padding:12px;border-radius:12px;box-shadow:0 10px 30px #0009}.search-panel.open{display:flex;gap:8px}.search-panel input{background:#07111e;border:1px solid #2a4964;border-radius:8px;padding:10px;color:white;min-width:230px}.search-panel button{background:transparent;border:0;color:white;font-size:20px;cursor:pointer}@keyframes shine{0%{left:-70%}55%,100%{left:140%}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+@media(max-width:1100px){.nav-link{font-size:8px;padding:4px 5px}.nav-link span{font-size:11px;margin-right:2px}.brand{min-width:220px}.brand-copy strong{font-size:25px}.nav-link{font-size:11px;padding:10px 8px}.nav-link span{font-size:16px}.category-grid{grid-template-columns:repeat(4,1fr)}.hero{grid-template-columns:52% 48%}.hero h1{font-size:39px}.how-section h2{font-size:18px}.step{font-size:10px}}
+@media(max-width:760px){.topbar{height:70px;padding:0 16px;gap:12px}.brand{min-width:0;border:0;padding:0;margin-right:auto}.brand-tv svg{width:52px}.brand-copy strong{font-size:23px}.brand-copy small{font-size:8px}.main-nav{display:none;position:absolute;top:70px;left:0;right:0;background:#07111e;border-bottom:1px solid #23415b;padding:12px;flex-direction:column;align-items:stretch}.main-nav.open{display:flex}.nav-link{font-size:14px}.search-toggle{width:40px;height:40px}.mobile-menu{display:block;width:40px;height:40px;font-size:20px}.hero{display:block;min-height:480px}.hero-copy{padding:34px 22px 20px}.hero h1{font-size:37px}.hero-desc{font-size:14px}.hero-scene{position:absolute;inset:170px 0 0 0;min-height:310px;opacity:.7}.hero-copy{position:relative;z-index:3}.hero:after{content:"";position:absolute;inset:150px 0 0;background:linear-gradient(#050a12,transparent 45%);z-index:1;pointer-events:none}.btn{min-width:0;padding:10px 15px;font-size:13px}.btn span{font-size:19px}.categories-section,.apps-section{padding-left:18px;padding-right:18px}.section-title{font-size:20px}.category-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.category-card{height:76px;border-radius:12px}.category-card b{font-size:24px}.category-card span{font-size:9px;text-align:center}.app-card{flex-basis:245px}.carousel-arrow.prev{left:-12px}.carousel-arrow.next{right:-12px}.how-section{margin:12px 16px 25px;display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:15px}.how-section h2{grid-column:1/-1;font-size:20px}.step{font-size:10px}.step strong{font-size:12px}.step-icon{font-size:27px}.desktop-only{display:none}footer{flex-wrap:wrap;padding:22px}footer small{width:100%;margin:0}.search-panel{top:76px;right:12px;left:12px}.search-panel input{min-width:0;flex:1}}
+
+/* Ajuste visual fiel a la propuesta aprobada de TV TIME */
+.topbar{height:82px;padding:0 clamp(16px,5.6vw,94px);gap:22px;background:#050a12;border-bottom:1px solid #172b40}
+.brand{min-width:330px;gap:10px;padding-right:30px}
+.brand-tv svg{width:90px;stroke-width:3.4}
+.brand-copy strong{font-size:38px;letter-spacing:-2px}
+.brand-copy small{font-size:13px;line-height:1.08}
+.nav-link{font-size:16px;padding:13px 15px}
+.nav-link span{font-size:23px}
+.search-toggle{width:56px;height:56px;background:#1b2432;border-color:#465268;font-size:31px}
+.hero{min-height:360px;grid-template-columns:46% 54%;background:#050a12}
+.hero-copy{padding-left:clamp(25px,7.2vw,120px);padding-top:27px;padding-bottom:25px}
+.hero h1{font-size:clamp(38px,3.35vw,52px);line-height:1.02;letter-spacing:-2.4px}
+.hero h1 em{color:#06baf0}
+.hero-desc{font-size:19px;line-height:1.4}
+.hero-scene{min-height:360px;background-image:linear-gradient(90deg,#050a12 0%,transparent 17%),url("assets/tv-room-reference.jpg");background-size:cover;background-position:center 47%;opacity:1}
+.hero-scene>*{display:none}
+.hero-scene:before{background:linear-gradient(90deg,#050a12 0,transparent 19%),linear-gradient(0deg,#080c15 0,transparent 18%)}
+.hero-actions .btn{min-width:240px;font-size:18px}
+.categories-section{padding-top:17px}
+.section-title{font-size:29px;margin-bottom:13px}
+.category-grid{grid-template-columns:repeat(8,minmax(0,1fr));gap:13px}
+.category-card{height:96px;border-radius:17px;background:linear-gradient(145deg,#182333,#0b121d)}
+.category-card b{font-size:37px}
+.category-card span{font-size:15px}
+.apps-section{padding-top:19px}
+.app-card{flex-basis:calc((100% - 72px)/7);min-width:190px;min-height:136px;padding:9px;gap:9px;border-color:#09bfe8;background:linear-gradient(145deg,#121e2c,#080e17);border-radius:16px}
+.app-icon{flex:0 0 72px;height:72px;border-radius:13px;overflow:hidden;background:#050b14;box-shadow:0 0 0 1px #04c9f5}
+.app-icon img{width:100%;height:100%;object-fit:cover;display:block}
+.app-content h3{font-size:16px;letter-spacing:-.5px}
+.app-content p{font-size:12px;line-height:1.25;min-height:30px}
+.download-btn{font-size:14px;padding:9px 6px;border-radius:24px}
+.carousel-arrow{top:37%;width:50px;height:50px;font-size:40px}
+.carousel-arrow.prev{left:-48px}.carousel-arrow.next{right:-48px}
+.carousel-dots{padding:0 0 14px}
+.how-section{margin-top:7px;min-height:82px;border-width:2px;border-radius:17px;padding:10px 22px}
+.how-section h2{font-size:27px}
+.step-icon{font-size:38px}
+.step{font-size:14px}
+.step strong{font-size:17px}
+@media(max-width:1100px){
+ .brand{min-width:245px}.brand-tv svg{width:68px}.brand-copy strong{font-size:29px}.brand-copy small{font-size:10px}
+ .nav-link{font-size:12px;padding:9px 7px}.nav-link span{font-size:17px}
+ .app-card{flex-basis:245px}.category-card span{font-size:11px}
+}
+@media(max-width:760px){
+ .topbar{height:70px;padding:0 14px}.brand{min-width:0}.brand-tv svg{width:53px}.brand-copy strong{font-size:24px}.brand-copy small{font-size:8px}
+ .hero{min-height:480px}.hero-copy{padding:30px 20px 18px}.hero h1{font-size:37px}.hero-desc{font-size:14px}
+ .hero-scene{inset:165px 0 0;min-height:315px;background-position:center;background-size:cover}
+ .categories-section,.apps-section{padding-left:20px;padding-right:20px}
+ .section-title{font-size:21px}.category-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+ .category-card{height:78px}.category-card b{font-size:27px}.category-card span{font-size:10px}
+ .app-card{flex-basis:250px;min-height:132px}.app-content h3{font-size:15px}.app-content p{font-size:11px}
+ .carousel-arrow.prev{left:-10px}.carousel-arrow.next{right:-10px}
+ .how-section{margin:12px 16px 25px;display:grid;grid-template-columns:1fr 1fr;padding:15px}
+ .how-section h2{font-size:20px}.step{font-size:10px}.step strong{font-size:12px}.step-icon{font-size:27px}
+}
+
+
+/* Navegación y resaltado de secciones */
+html { scroll-behavior: smooth; }
+#categorias, #aplicaciones, #como-funciona { scroll-margin-top: 105px; }
+.main-nav .nav-link.nav-contact {
+  color: #fff;
+  background: #16a34a;
+  border: 1px solid #22c55e;
+  box-shadow: 0 0 16px rgba(34,197,94,.24);
+}
+.main-nav .nav-link.nav-contact:hover,
+.main-nav .nav-link.nav-contact:focus-visible {
+  color: #fff;
+  background: #15803d;
+  box-shadow: 0 0 22px rgba(34,197,94,.48);
+}
+.section-highlight {
+  animation: sectionGlow 1.9s ease;
+}
+@keyframes sectionGlow {
+  0%, 100% { filter: none; }
+  18%, 62% {
+    filter: drop-shadow(0 0 12px rgba(0,195,255,.7));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .section-highlight { animation: none; outline: 2px solid #00c8ff; outline-offset: 8px; }
+}
+
+
+/* Tarjetas de aplicaciones: botones alineados en una misma línea inferior */
+.app-card {
+  align-items: stretch;
+  min-height: 154px;
+}
+.app-icon {
+  align-self: center;
+}
+.app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 126px;
+}
+.app-content h3 {
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+}
+.app-content p {
+  min-height: 34px;
+  margin-bottom: 9px;
+}
+.download-btn {
+  margin-top: auto;
+  flex: 0 0 auto;
+  min-height: 34px;
+}
+
+/* WhatsApp: logo reconocible y animación continua para llamar la atención */
+.main-nav .nav-link.nav-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  animation: whatsappPulse 1.8s ease-in-out infinite;
+}
+.nav-contact .whatsapp-mark {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  vertical-align: middle;
+}
+.nav-contact .whatsapp-mark svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+@keyframes whatsappPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 10px rgba(34,197,94,.28); }
+  50% { transform: scale(1.07); box-shadow: 0 0 23px rgba(34,197,94,.72); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .main-nav .nav-link.nav-contact { animation: none; }
+}
+
+
+/* Ventana emergente de instrucciones */
+.btn-outline { font-family: inherit; cursor: pointer; }
+body.modal-open { overflow: hidden; }
+.how-modal {
+  position: fixed; inset: 0; z-index: 1000;
+  display: none; align-items: center; justify-content: center;
+  padding: 20px;
+}
+.how-modal.visible { display: flex; }
+.how-modal-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(0,5,13,.82);
+  backdrop-filter: blur(7px);
+}
+.how-modal-card {
+  position: relative; z-index: 1;
+  width: min(100%, 620px); max-height: min(88vh, 820px);
+  overflow-y: auto; padding: 30px;
+  border: 1px solid #087fae; border-radius: 22px;
+  background: linear-gradient(145deg,#142438,#080f1b 75%);
+  box-shadow: 0 0 38px rgba(0,190,255,.24), 0 24px 80px #000b;
+  animation: howModalIn .22s ease-out;
+}
+.how-modal-card h2 { margin: 0 42px 14px 0; font-size: clamp(25px,4vw,34px); }
+.how-modal-card h3 { margin: 20px 0 10px; color: #08c5f2; font-size: 17px; text-transform: uppercase; }
+.how-modal-intro { color: #eaf4ff; line-height: 1.65; font-size: 15px; }
+.how-modal-card ol { margin: 0; padding-left: 25px; }
+.how-modal-card li { padding: 7px 0 7px 5px; line-height: 1.45; color: #eaf4ff; }
+.how-modal-alt {
+  margin-top: 18px; padding: 15px 18px;
+  border: 1px solid #27506d; border-radius: 14px;
+  background: rgba(0,160,220,.08);
+}
+.how-modal-alt h3 { margin-top: 0; }
+.how-modal-alt p { margin: 0; line-height: 1.55; color: #eaf4ff; }
+.how-modal-finish { margin: 18px 0; color: #fff; font-weight: 800; font-size: 17px; }
+.how-modal-close {
+  position: absolute; top: 13px; right: 16px;
+  width: 38px; height: 38px; border: 1px solid #496078;
+  border-radius: 50%; background: #1b2b3d; color: white;
+  font-size: 27px; line-height: 1; cursor: pointer;
+}
+.how-modal-ok { min-width: 150px; border: 0; }
+@keyframes howModalIn {
+  from { opacity: 0; transform: translateY(12px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (max-width: 520px) {
+  .how-modal { padding: 12px; }
+  .how-modal-card { padding: 24px 20px; }
+}
+
+
+/* Guía de instalación: separar claramente los dos métodos */
+.how-modal-block {
+  margin: 18px 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(0, 195, 255, .25);
+  border-radius: 14px;
+  background: rgba(0, 150, 220, .06);
+}
+.how-modal-block h3 {
+  margin: 0 0 10px;
+  color: #05cafa;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+.how-modal-block ol {
+  margin: 0;
+  padding-left: 22px;
+}
+.how-modal-block li {
+  padding: 4px 0;
+  line-height: 1.5;
+}
+
+/* Logo principal TV TIME */
+.brand{min-width:190px;padding-right:18px;gap:0}
+.brand-logo{display:block;width:170px;height:72px;object-fit:contain;object-position:left center}
+@media(max-width:1100px){.brand{min-width:165px}.brand-logo{width:145px;height:64px}}
+@media(max-width:760px){.brand{min-width:0}.brand-logo{width:132px;height:60px}}
+
+/* Ventana de códigos de descarga */
+.download-codes-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.download-code-item{display:grid;grid-template-columns:1fr auto;align-items:center;gap:7px 10px;padding:12px 13px;border:1px solid rgba(0,195,255,.25);border-radius:13px;background:rgba(0,150,220,.07)}
+.download-code-name{font-size:13px;font-weight:700;color:#eaf4ff}
+.download-code-value{font-size:19px;letter-spacing:1px;color:#08c5f2;font-variant-numeric:tabular-nums}
+.copy-code-btn{grid-column:2;grid-row:1 / span 2;border:1px solid #078fc2;border-radius:18px;padding:7px 12px;background:#09243a;color:#fff;font-size:11px;font-weight:800;cursor:pointer}
+.copy-code-btn:hover{background:#087fc0}
+@media(max-width:560px){.download-codes-list{grid-template-columns:1fr}.download-code-item{grid-template-columns:1fr auto}.download-code-value{font-size:18px}}
+
+/* Ajuste de ubicación del logo en el encabezado */
+.topbar{padding-left:clamp(28px,7.5vw,118px)}
+.brand-logo{object-position:center center}
+@media(max-width:760px){.topbar{padding-left:20px}.brand-logo{object-position:center center}}
+
+
+/* Diseño adaptable para celulares, tablets, notebooks y pantallas grandes */
+.developer-credit{margin-left:0!important;font-size:12px!important}
+.developer-credit strong{color:inherit;font-weight:inherit;font-size:inherit;font-style:inherit}
+img{max-width:100%;height:auto}
+button,a{ -webkit-tap-highlight-color:transparent }
+@media (min-width:1500px){
+  .topbar{padding-left:clamp(118px,8vw,180px);padding-right:clamp(40px,6vw,120px)}
+  .hero-copy{padding-left:clamp(120px,9vw,180px)}
+  .categories-section,.apps-section{padding-left:clamp(94px,8vw,150px);padding-right:clamp(94px,8vw,150px)}
+}
+@media (max-width:900px){
+  .topbar{gap:14px;padding-left:22px;padding-right:22px}
+  .brand{min-width:150px}
+  .brand-logo{width:138px;height:62px}
+  .main-nav{gap:3px}
+  .nav-link{font-size:9px;padding:5px 5px}
+  .hero-copy{padding-left:28px}
+  .hero h1{font-size:clamp(30px,4.4vw,40px)}
+  .category-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .how-section{flex-wrap:wrap;justify-content:flex-start}
+}
+@media (max-width:760px){
+  .topbar{padding-left:14px;padding-right:14px}
+  .brand-logo{width:128px;height:58px}
+  .main-nav{width:100%}
+  .hero{min-height:470px}
+  .hero-copy{padding:30px 18px 20px}
+  .hero-actions{gap:9px}
+  .btn{flex:1 1 auto}
+  .hero-scene{min-height:290px}
+  .section-heading{gap:8px;align-items:flex-start}
+  .section-title{font-size:clamp(18px,4.8vw,21px)}
+  .app-card{flex-basis:min(82vw,285px)}
+  .carousel-arrow{width:34px;height:34px;font-size:27px}
+  .how-section{margin-left:14px;margin-right:14px;padding:14px;gap:14px}
+  .how-section h2{white-space:normal;width:100%}
+  footer{flex-wrap:wrap;padding:20px 18px;gap:10px}
+  footer small{margin-left:0}
+  .developer-credit{width:100%}
+}
+@media (max-width:420px){
+  .brand-logo{width:112px;height:54px}
+  .search-toggle,.mobile-menu{width:36px;height:36px}
+  .hero h1{font-size:32px}
+  .hero-desc{font-size:13px}
+  .category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .app-card{flex-basis:86vw}
+  .how-modal-card{padding:22px 16px}
+  .download-code-item{padding:10px}
+}
+
+/* ANIMACIÓN AMBIENTAL REALISTA TV TIME: sin partículas flotantes */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -18%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: .52;
+  background:
+    radial-gradient(ellipse at 18% 38%, rgba(0, 145, 255, .20), transparent 34%),
+    radial-gradient(ellipse at 78% 58%, rgba(132, 48, 220, .20), transparent 38%),
+    linear-gradient(112deg, transparent 28%, rgba(35, 145, 255, .055) 46%, rgba(174, 90, 255, .075) 53%, transparent 70%);
+  background-size: 130% 130%, 135% 135%, 220% 100%;
+  background-position: 0% 50%, 100% 50%, -120% 0;
+  animation: ambientLightMove 28s ease-in-out infinite alternate;
+}
+.topbar, main, footer { position: relative; z-index: 2; }
+
+.hero-scene .room-glow {
+  animation: roomGlowPulse 6s ease-in-out infinite alternate;
+}
+.tv-screen {
+  animation: screenGlow 5s ease-in-out infinite alternate;
+}
+.app-card {
+  position: relative;
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.app-card:hover {
+  transform: translateY(-7px) scale(1.025);
+  border-color: rgba(116, 117, 255, .85);
+  box-shadow: 0 12px 35px rgba(0,0,0,.35), 0 0 22px rgba(0,170,255,.22), 0 0 28px rgba(145,65,255,.20);
+}
+.btn-primary, .download-btn {
+  transition: filter .3s ease, box-shadow .3s ease, transform .3s ease;
+}
+.btn-primary:hover, .download-btn:hover {
+  filter: brightness(1.16);
+  box-shadow: 0 0 18px rgba(0,180,255,.42), 0 0 24px rgba(145,65,255,.20);
+  transform: translateY(-2px);
+}
+@keyframes ambientLightMove {
+  0% {
+    background-position: 0% 45%, 100% 55%, -120% 0;
+    transform: scale(1);
+    opacity: .34;
+  }
+  50% {
+    background-position: 35% 55%, 65% 45%, 0% 0;
+    opacity: .58;
+  }
+  100% {
+    background-position: 100% 55%, 0% 45%, 120% 0;
+    transform: scale(1.06);
+    opacity: .42;
+  }
+}
+@keyframes roomGlowPulse {
+  from { opacity: .42; filter: blur(1px); }
+  to { opacity: .78; filter: blur(4px); }
+}
+@keyframes screenGlow {
+  from { box-shadow: 0 0 0 2px #343043, 0 15px 35px #000, 0 0 12px rgba(164,55,255,.18); }
+  to { box-shadow: 0 0 0 2px #655080, 0 15px 35px #000, 0 0 25px rgba(164,55,255,.48); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body::before, .hero-scene .room-glow, .tv-screen { animation: none !important; }
+}
+
+/* CONTACTO: pulso permanente, visible desde que aparece en pantalla */
+.main-nav .nav-link.nav-contact {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #fff;
+  background: linear-gradient(110deg, #087b35, #16a34a, #22c55e, #087b35);
+  background-size: 220% 100%;
+  border: 1px solid #4ade80;
+  box-shadow: 0 0 12px rgba(34,197,94,.48);
+  animation: tvContactPulse 1.55s ease-in-out infinite, tvContactGreenFlow 3.2s linear infinite !important;
+  transform-origin: center;
+}
+.main-nav .nav-link.nav-contact::before,
+.main-nav .nav-link.nav-contact::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border: 2px solid rgba(74,222,128,.8);
+  border-radius: inherit;
+  pointer-events: none;
+  animation: tvContactRing 1.9s ease-out infinite !important;
+}
+.main-nav .nav-link.nav-contact::after {
+  animation-delay: .95s !important;
+}
+.main-nav .nav-link.nav-contact:hover,
+.main-nav .nav-link.nav-contact:focus-visible {
+  color: #fff;
+  background: linear-gradient(110deg, #087b35, #16a34a, #22c55e, #087b35);
+  background-size: 220% 100%;
+  box-shadow: 0 0 22px rgba(34,197,94,.75);
+  transform: scale(1.04);
+}
+.nav-contact .whatsapp-mark {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 20px;
+  animation: tvContactIcon 1.55s ease-in-out infinite !important;
+}
+@keyframes tvContactPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 10px rgba(34,197,94,.38), 0 0 0 0 rgba(34,197,94,.42); }
+  50% { transform: scale(1.075); box-shadow: 0 0 24px rgba(34,197,94,.9), 0 0 15px 4px rgba(34,197,94,.25); }
+}
+@keyframes tvContactRing {
+  0% { transform: scale(.94); opacity: .85; }
+  100% { transform: scale(1.42, 1.75); opacity: 0; }
+}
+@keyframes tvContactGreenFlow {
+  from { background-position: 0% 50%; }
+  to { background-position: 220% 50%; }
+}
+@keyframes tvContactIcon {
+  0%, 100% { transform: scale(1) rotate(0); }
+  45% { transform: scale(1.13) rotate(-7deg); }
+  60% { transform: scale(1.13) rotate(7deg); }
+}
+/* La animación de Contacto se mantiene activa incluso con reducción de movimiento del sistema. */
+@media (prefers-reduced-motion: reduce) {
+  .main-nav .nav-link.nav-contact,
+  .main-nav .nav-link.nav-contact::before,
+  .main-nav .nav-link.nav-contact::after,
+  .nav-contact .whatsapp-mark {
+    animation-duration: inherit !important;
+    animation-iteration-count: infinite !important;
+  }
+}
+
+
+/* AJUSTE RESPONSIVE: el menú móvil ocupa espacio propio y no tapa la imagen */
+@media (max-width: 760px) {
+  .topbar {
+    height: auto;
+    min-height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 0;
+    padding: 6px 14px;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 58px;
+  }
+
+  .search-toggle,
+  .mobile-menu {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .main-nav {
+    display: none;
+    position: static;
+    inset: auto;
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 6px 0 0;
+    padding: 10px 0 8px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 7px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 12px;
+    white-space: normal;
+  }
+
+  .main-nav .nav-link.nav-contact {
+    justify-content: center;
+  }
+
+  /* La imagen empieza dentro del hero, debajo del texto y los botones principales. */
+  .hero {
+    position: relative;
+    min-height: 490px;
+    overflow: hidden;
+  }
+
+  .hero-copy {
+    position: relative;
+    z-index: 3;
+    padding: 28px 18px 18px;
+  }
+
+  .hero-scene {
+    position: absolute;
+    inset: 205px 0 0 0;
+    z-index: 0;
+    min-height: 285px;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .hero:after {
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .topbar { padding-left: 10px; padding-right: 10px; }
+  .brand-logo { width: 104px; height: 50px; }
+  .search-toggle, .mobile-menu { flex-basis: 36px; width: 36px; height: 36px; }
+  .hero { min-height: 500px; }
+  .hero-scene { inset-top: 220px; top: 220px; }
+  .hero-actions .btn { min-width: 0; padding: 10px 11px; font-size: 12px; }
+}
