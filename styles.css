@@ -536,3 +536,209 @@ body::before {
   .hero-scene { inset-top: 220px; top: 220px; }
   .hero-actions .btn { min-width: 0; padding: 10px 11px; font-size: 12px; }
 }
+
+
+/* TV TIME — rediseño móvil: encabezado y contenido sin superposiciones */
+@media (max-width: 760px) {
+  html { scroll-padding-top: 78px; }
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    min-height: 66px;
+    height: auto;
+    padding: 7px 12px;
+  }
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 48px;
+    margin: 0 auto 0 0;
+    padding: 0;
+  }
+  .brand-logo {
+    display: block;
+    width: clamp(104px, 31vw, 132px);
+    height: 48px;
+    object-fit: contain;
+  }
+  .search-toggle, .mobile-menu {
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    font-size: 21px;
+  }
+  .main-nav {
+    display: none;
+    position: static;
+    inset: auto;
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 4px 0 0;
+    padding: 8px 0 2px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .main-nav.open {
+    display: flex;
+  }
+  .main-nav .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 40px;
+    padding: 9px 12px;
+    font-size: 13px;
+    line-height: 1.25;
+    border-radius: 10px;
+    white-space: normal;
+  }
+  .main-nav .nav-link span { font-size: 17px; }
+  .main-nav .nav-link.nav-contact { justify-content: flex-start; }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .hero-copy {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding: 27px 18px 18px;
+  }
+  .hero .eyebrow { font-size: 12px; }
+  .hero h1 {
+    font-size: clamp(31px, 8vw, 39px);
+    line-height: 1.06;
+    letter-spacing: -1.4px;
+  }
+  .hero-desc {
+    max-width: 38ch;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  .hero-actions .btn {
+    flex: 1 1 145px;
+    min-width: 0;
+    min-height: 42px;
+    padding: 10px 12px;
+    font-size: 13px;
+    white-space: normal;
+  }
+  .hero-actions .btn span { font-size: 18px; }
+  .hero-scene {
+    position: relative;
+    inset: auto;
+    display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 0;
+    height: clamp(190px, 57vw, 285px);
+    opacity: 1;
+    background-position: center 48%;
+    background-size: cover;
+  }
+  .hero:after {
+    content: "";
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(180deg, transparent, #050a12);
+  }
+  .categories-section, .apps-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section-heading {
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title {
+    font-size: clamp(18px, 4.8vw, 22px);
+    line-height: 1.2;
+  }
+  .see-all { flex: 0 0 auto; font-size: 12px; }
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+  .category-card { min-width: 0; height: 76px; }
+  .category-card span { font-size: 11px; }
+  .carousel-wrap { padding: 0 2px; }
+  .app-track { gap: 10px; padding-bottom: 12px; }
+  .app-card {
+    flex: 0 0 min(84vw, 310px);
+    min-width: 0;
+    min-height: 138px;
+    padding: 10px;
+    gap: 10px;
+  }
+  .app-icon { flex: 0 0 64px; width: 64px; height: 64px; }
+  .app-content h3 { font-size: 14px; min-height: 32px; }
+  .app-content p { font-size: 11px; }
+  .download-btn { min-height: 36px; font-size: 12px; }
+  .carousel-arrow {
+    top: 40%;
+    width: 32px;
+    height: 32px;
+    font-size: 25px;
+    line-height: 24px;
+  }
+  .carousel-arrow.prev { left: -7px; }
+  .carousel-arrow.next { right: -7px; }
+  .how-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px 10px;
+    margin: 12px 14px 22px;
+    padding: 14px;
+  }
+  .how-section h2 {
+    grid-column: 1 / -1;
+    width: auto;
+    margin: 0;
+    font-size: 20px;
+  }
+  .step { min-width: 0; gap: 7px; font-size: 10px; }
+  .step strong { font-size: 12px; }
+  .step-icon { flex: 0 0 auto; font-size: 25px; }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    padding: 20px 16px;
+  }
+  footer small, footer .developer-credit { width: 100%; margin: 0; }
+  .search-panel { top: 72px; right: 10px; left: 10px; }
+  .search-panel input { min-width: 0; flex: 1 1 auto; }
+}
+@media (max-width: 390px) {
+  .topbar { padding-left: 10px; padding-right: 10px; }
+  .brand-logo { width: 104px; }
+  .search-toggle, .mobile-menu { flex-basis: 35px; width: 35px; height: 35px; }
+  .hero-copy { padding: 23px 15px 15px; }
+  .hero h1 { font-size: 30px; }
+  .hero-actions .btn { flex-basis: 100%; }
+  .section-title { font-size: 18px; }
+  .app-card { flex-basis: 88vw; }
+}
